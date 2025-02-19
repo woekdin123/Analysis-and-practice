@@ -21,6 +21,8 @@ A common threshold for identifying outliers is:
 
 ## 2. **Interquartile Range (IQR) Method**
 
+![0_Zz3XmuErUXmIcy6C](https://github.com/user-attachments/assets/445eee15-4aeb-4f41-a21b-fcc9d9aaaa8c)
+
 The IQR method is based on the quartiles of the dataset:
 
 \[
