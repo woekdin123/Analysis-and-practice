@@ -7,17 +7,17 @@ Outliers are data points that significantly deviate from the overall pattern of 
 
 The Z-score measures how many standard deviations a data point is from the mean. Outliers are typically defined as points where:
 
-\[
+$$\[
 Z = \frac{X - \mu}{\sigma}
-\]
+\]$$
 
 Where:
 - \( X \) is the data point,
-- \( \mu \) is the mean,
-- \( \sigma \) is the standard deviation.
+- $$\( \mu \)$$ is the mean,
+- $$\( \sigma \)$$ is the standard deviation.
 
 A common threshold for identifying outliers is:
-- \( |Z| > 3 \) (for normally distributed data).
+- $$\( |Z| > 3 \)$$ (for normally distributed data).
 
 ## 2. **Interquartile Range (IQR) Method**
 
@@ -42,16 +42,16 @@ X < Q1 - 1.5 \times IQR \quad \text{or} \quad X > Q3 + 1.5 \times IQR
 
 For datasets with a non-normal distribution, a modified Z-score is used:
 
-\[
+$$\[
 M = \frac{0.6745 \times (X - \tilde{X})}{MAD}
-\]
+\]$$
 
 Where:
-- \( \tilde{X} \) is the median,
+- $$\( \tilde{X} \)$$ is the median,
 - \( MAD \) is the median absolute deviation:
   \[
-  MAD = \text{median}(|X_i - \tilde{X}|)
-  \]
+  MAD = $$\text{median}(|X_i - \tilde{X}|)
+  \]$$
 
 Outliers are detected when \( |M| > 3.5 \).
 
